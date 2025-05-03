@@ -80,13 +80,13 @@ def demo_interaction(
         # 导出为视频文件
         animation.save(filename=export_to, writer="ffmpeg", fps=fps, dpi=300)
 
-
-# 可视化INTERACTION样例场景
-demo_interaction(
-    file="vehicle_tracks_000.csv",
-    map_file="DR_USA_Intersection_EP0.osm",
-    folder="./data",
-    xlim=[945, 1050],  # 设置x轴显示范围
-    ylim=[965, 1025],  # 设置y轴显示范围
-    export_to="results/interaction_sample.mp4",  # 导出路径
-)
+if __name__ == "__main__":
+    # 可视化INTERACTION样例场景
+    demo_interaction(
+        file="vehicle_tracks_000.csv",
+        map_file="DR_USA_Intersection_EP0.osm",
+        folder="./data",
+        xlim=[945, 1050],  # 设置x轴显示范围
+        ylim=[965, 1025],  # 设置y轴显示范围
+        export_to="results/interaction_sample.mp4",  # 导出路径
+    )

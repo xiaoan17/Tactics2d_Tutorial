@@ -58,12 +58,13 @@ def demo_argoverse(
         animation.save(filename=export_to, writer="ffmpeg", fps=fps, dpi=300)
 
 
-# 可视化Argoverse 2样例场景
-demo_argoverse(
-    file="scenario_0a0a2bb7-c4f4-44cd-958a-9ee15cb34aca.parquet",
+if __name__ == "__main__":
+    # 可视化Argoverse 2样例场景
+    demo_argoverse(
+        file="scenario_0a0a2bb7-c4f4-44cd-958a-9ee15cb34aca.parquet",
     map_file="log_map_archive_0a0a2bb7-c4f4-44cd-958a-9ee15cb34aca.json",
     folder="./data",
     xlim=[1800, 2100],  # 设置x轴显示范围
     ylim=[500, 750],    # 设置y轴显示范围
     export_to="results/argoverse_v2_sample_scenario.mp4",  # 导出路径
-)
+    )

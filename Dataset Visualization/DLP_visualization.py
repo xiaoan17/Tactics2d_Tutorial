@@ -82,14 +82,15 @@ def demo_dlp(
         # 导出为视频文件
         animation.save(filename=export_to, writer="ffmpeg", fps=fps, dpi=300)
 
-# 可视化DLP样例场景
+if __name__ == "__main__":
+    # 可视化DLP样例场景
 
-# TODO: 只用到了file文件，同时parser中文件名已经写死，不要随意修改文件名。
-demo_dlp(
-    file="DJI_0012_agents.json",
-    map_file="DLP_map.osm",
-    folder="./data",
-    xlim=[-5, 145],  # 设置x轴显示范围
-    ylim=[0, 80],    # 设置y轴显示范围
-    export_to="results/DLP_sample.mp4",  # 导出路径
-)
+    # TODO: 只用到了file文件，同时parser中文件名已经写死，不要随意修改文件名。
+    demo_dlp(
+        file="DJI_0012_agents.json",
+        map_file="DLP_map.osm",
+        folder="./data",
+        xlim=[-5, 145],  # 设置x轴显示范围
+        ylim=[0, 80],    # 设置y轴显示范围
+        export_to="results/DLP_sample.mp4",  # 导出路径
+    )
