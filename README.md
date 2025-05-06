@@ -8,6 +8,10 @@ Based on the official tutorial, organize the code into commonly used Python scri
 ## warning
 由于作者本人水平有限，对于强化学习部分并没有进行充分的测试，模型架构仍然存在问题，忙完这段时间再继续更新。20250506。
 
+## TODO
+测试强化学习的全流程，并梳理代码。
+更新与调试部分地图的osm文件问题。
+
 Reference:
 
 [1] https://github.com/WoodOxen/tactics2d
