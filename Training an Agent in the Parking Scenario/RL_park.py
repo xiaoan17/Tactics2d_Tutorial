@@ -35,16 +35,6 @@ swanlab.sync_tensorboard_torch()
 
 #---------- 配置与初始化部分 ----------#
 
-# 初始化邮件通知插件
-email_callback = EmailCallback(
-    sender_email="xiaoan_17@qq.com",
-    receiver_email="anbc17@seu.edu.cn",
-    password="giykurcogkqycbhd",
-    smtp_server="smtp.qq.com",
-    port=587,
-    language="zh",
-)
-
 # 初始化SwanLab实验跟踪
 swanlab.init(
     project="tactics2d_test",
