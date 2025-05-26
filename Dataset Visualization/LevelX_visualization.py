@@ -63,7 +63,7 @@ def demo_levelx(
     lanelet2_parser = OSMParser(lanelet2=True)
 
     map_ = lanelet2_parser.parse(
-        map_root, map_config["project_rule"], map_config["gps_origin"], map_config
+        map_path, map_config
     )
 
     # 初始化场景显示器
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     map_config_path = r"data/map.config"
     map_folder = r"/home/data1/Anbc_Save/研究用数据集/2024-12_LevelX-map"
     # 此处以highD为例，还有其他的数据集，替换文件路径即可。
-    dataset_name = "rounD"
+    dataset_name = "exiD"  # 可选: "highD", "inD", "rounD", "exiD"
 
     if dataset_name == "highD":
         trajectory_file = "01_tracks.csv"
