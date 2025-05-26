@@ -1,5 +1,5 @@
 import numpy as np
-from tactics2d.dataset_parser import ArgoverseParser
+from tactics2d.dataset_parser import Argoverse2Parser
 from tactics2d.traffic.scenario_display import ScenarioDisplay
 
 
@@ -20,7 +20,7 @@ def demo_argoverse(
         export_to: 导出文件路径，默认为None（不导出）
     """
     # 初始化Argoverse数据解析器
-    dataset_parser = ArgoverseParser()
+    dataset_parser = Argoverse2Parser()
     
     # 解析轨迹数据
     trajectories, actual_time_range = dataset_parser.parse_trajectory(file, folder)
